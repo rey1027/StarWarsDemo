@@ -1,0 +1,59 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+jar {
+    baseName = 'starwars'
+    version = '0.1.0'
+}
+
+mainClassName = 'Main'
+
+repositories{
+    mavenCentral()
+}
+
+dependencies{
+    // https://mvnrepository.com/artifact/commons-cli/commons-cli
+    compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
+    // https://mvnrepository.com/artifact/commons-codec/commons-codec
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.13'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5
+    compile group: 'org.apache.httpcomponents.client5', name: 'httpclient5', version: '5.0.3'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-cache
+    testCompile group: 'org.apache.httpcomponents.client5', name: 'httpclient5-cache', version: '5.0.3'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-fluent
+    compile group: 'org.apache.httpcomponents.client5', name: 'httpclient5-fluent', version: '5.0.3'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-testing
+    compile group: 'org.apache.httpcomponents.client5', name: 'httpclient5-testing', version: '5.0.3'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-win
+    testCompile group: 'org.apache.httpcomponents.client5', name: 'httpclient5-win', version: '5.0.3'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5
+    compile group: 'org.apache.httpcomponents.core5', name: 'httpcore5', version: '5.0.2'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-h2
+    compile group: 'org.apache.httpcomponents.core5', name: 'httpcore5-h2', version: '5.0.2'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-reactive
+    testCompile group: 'org.apache.httpcomponents.core5', name: 'httpcore5-reactive', version: '5.0.2'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-testing
+    compile group: 'org.apache.httpcomponents.core5', name: 'httpcore5-testing', version: '5.0.2'
+    // https://mvnrepository.com/artifact/net.java.dev.jna/jna
+    compile group: 'net.java.dev.jna', name: 'jna', version: '5.2.0'
+    // https://mvnrepository.com/artifact/net.java.dev.jna/jna-platform
+    compile group: 'net.java.dev.jna', name: 'jna-platform', version: '5.2.0'
+    // https://mvnrepository.com/artifact/org.reactivestreams/reactive-streams
+    compile group: 'org.reactivestreams', name: 'reactive-streams', version: '1.0.2'
+    // https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava
+    compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.8'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.9'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+    // https://mvnrepository.com/artifact/ch.qos.logback/logback-core
+    compile group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.11.3'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.11.3'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.3'
+}
